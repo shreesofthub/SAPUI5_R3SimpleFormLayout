@@ -1,0 +1,54 @@
+<mvc:View controllerName="r3simpleformlayout.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:c="sap.ui.core">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page">
+                    <customHeader>
+                        <Bar id="idBar">
+                            <contentMiddle>
+                                <Title id="idHeader" text="{i18n>title}" width="100%" class="sapMH2FontSize"></Title>
+                            </contentMiddle>
+                        </Bar>
+                    </customHeader>
+                    <Panel id="idPanl1" expandable="true" expanded="true" headerText="SimpleForm">
+                        <f:SimpleForm id="idSF" editable="true" layout="ResponsiveGridLayout" 
+                                 labelSpanL = "2" 
+                                 labelSpanM = "2" emptySpanL="6" emptySpanM="6">
+                            <f:content>
+                                <Label id="idL1" text="Employee ID"></Label>
+                                <Input id="idI1"></Input>
+                                <Label id="idL2" text="Employee Name"></Label>
+                                <Input id="idI2"></Input>
+                                <Label id="idL3" text="Employee Designation"></Label>
+                                <Input id="idI3"></Input>
+                                <Label id="idL4" text="Employee Skills"></Label>
+                                <Input id="idI4"></Input>
+                                <Label id="idL5" text="Employee Phone"></Label>
+                                <Input id="idI5"></Input>
+                                <Label id="idL6" text="Employee Email"></Label>
+                                <Input id="idI6"></Input>
+                            </f:content>
+                            <f:toolbar>
+                                <Toolbar id="idTBar" height="100px">
+                                    <content>
+                                        <VBox id="idVB1" class="sapUiSmallMarginBegin">
+                                            <HBox id="idHB1">
+                                                <Label id="idLab1" text="EmptySpan" class="sapUiSmallMarginEnd sapUiTinyMarginTop"></Label>
+                                                <Input id="idEmpty" type="Number" maxLength="1" width="30%" tooltip="EmptySpan" class="sapUiSmallMarginTop"></Input>
+                                            </HBox>
+                                            <Button id="idBtn1" text="Apply" press="onApply" type="Emphasized"/>
+                                        </VBox>
+                                    </content>
+                                </Toolbar>
+                            </f:toolbar>
+                        </f:SimpleForm>
+                    </Panel>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
