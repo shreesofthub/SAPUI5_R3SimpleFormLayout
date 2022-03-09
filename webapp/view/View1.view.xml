@@ -47,6 +47,32 @@
                             </f:toolbar>
                         </f:SimpleForm>
                     </Panel>
+                    <Panel id="idPanel2" expandable="true" headerText="SimpleForm with SubBlocks">
+                        <f:SimpleForm id="idSF1" layout="ResponsiveGridLayout" labelSpanL="2" labelSpanM="2" columnsL="2" columnsM="2">
+                            <c:Title id="idCTitle" text="Basic Details"/>
+                            <Label id="idL1_1" text="Employee ID"/>
+                            <Input id="idI1_1"></Input>
+                            <Label id="idL1_2" text="Employee Name"></Label>
+                            <Input id="idI1_2"></Input>
+                            <c:Title id="idCTitle2" text="Skills and Designation"></c:Title>
+                            <Label id="idL1_3" text="Employee Designation"></Label>
+                            <Input id="idI1_3"></Input>
+                            <Label id="idL1_4" text="Employee Skills"></Label>
+                            <Input id="idI1_4"></Input>
+                            <c:Title id="idCTitle3" text="Contact Details"></c:Title>
+                            <Label id="idL1_5" text="Employee Phone"></Label>
+                            <Input id="idI1_5"></Input>
+                            <Label id="idL1_6" text="Employee Email"></Label>
+                            <Input id="idI1_6"></Input>
+                            <f:toolbar>
+                                <Toolbar id="idBar1">
+                                    <Label id="idLab2" text="ColumnSpan"></Label>
+                                    <Input id="idColumn" width="10%" maxLength="1"></Input>
+                                    <Button id="idBtn2" text="Apply" press="onColumnSpanApply" type="Transparent"></Button>
+                                </Toolbar>
+                            </f:toolbar>
+                        </f:SimpleForm>
+                    </Panel>
                 </Page>
             </pages>
         </App>
