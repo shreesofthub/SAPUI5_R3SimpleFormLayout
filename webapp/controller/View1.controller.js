@@ -9,7 +9,7 @@ sap.ui.define([
 
         return Controller.extend("r3simpleformlayout.controller.View1", {
             onInit: function () {
-
+                // this.getView().addStyleClass("sapUiSizeCompact");
             },
             onApply: function () {
                 var oSF = this.byId("idSF");
